@@ -6,13 +6,13 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.validation.constraints.NotNull;
 
-@MappedSuperclass
+@MappedSuperclass // when you are doing inheritance
 public abstract class AbstractEntity {
 
 	private int uid;
 	
 	@Id
-    @GeneratedValue
+    @GeneratedValue // Hibernate will generate that for me
     @NotNull
     @Column(name = "uid", unique = true)
 	public int getUid() {

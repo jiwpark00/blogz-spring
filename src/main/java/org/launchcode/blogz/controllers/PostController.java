@@ -25,13 +25,25 @@ public class PostController extends AbstractController {
 		
 		// TODO - implement newPost
 		
+		// get request parameters
+		
+		// validate parameters
+		
+		// if valid, create new Post; create with Post model and save with PostDao
+		
+		// if not valid, send back to the form, with error message
+		
 		return "redirect:index"; // TODO - this redirect should go to the new post's page  		
 	}
-	
+	// handles request like blog/chris/5
 	@RequestMapping(value = "/blog/{username}/{uid}", method = RequestMethod.GET)
 	public String singlePost(@PathVariable String username, @PathVariable int uid, Model model) {
 		
 		// TODO - implement singlePost
+		
+		// get the given post
+		
+		// pass the post into the template
 		
 		return "post";
 	}
@@ -40,6 +52,11 @@ public class PostController extends AbstractController {
 	public String userPosts(@PathVariable String username, Model model) {
 		
 		// TODO - implement userPosts
+		
+		// get all of the user's posts
+		
+		// pass the posts into the template
+		// model.addAttribute("name", listOfPosts);
 		
 		return "blog";
 	}

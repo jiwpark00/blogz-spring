@@ -22,6 +22,14 @@ public class AuthenticationController extends AbstractController {
 		
 		// TODO - implement signup
 		
+		// get parameters from request
+		
+		// validate parameters (username, password, verify)
+		
+		// if they validate, create a new user and put them in the session
+		
+		// Session thisSession = request.getSession();
+		
 		return "redirect:blog/newpost";
 	}
 	
@@ -34,6 +42,14 @@ public class AuthenticationController extends AbstractController {
 	public String login(HttpServletRequest request, Model model) {
 		
 		// TODO - implement login
+		
+		// get parameters from request
+		
+		// get user by their username
+		
+		// check password is correct
+		
+		// log them in, if so (i.e. setting the user in the session)
 		
 		return "redirect:blog/newpost";
 	}
